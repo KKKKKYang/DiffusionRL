@@ -1,7 +1,7 @@
 {
-  "name": "diffusion-rl-dev",
+  "name": "diffusion-rl-cuda",
   "build": {
-    "dockerfile": "../docker/Dockerfile",  // 👈 路径要加上 "../"
+    "dockerfile": "docker/Dockerfile",
     "context": ".."
   },
   "settings": {
@@ -13,5 +13,6 @@
         "ms-python.python"
       ]
     }
-  }
+  },
+  "postCreateCommand": "pip install torch tensorboard"
 }
