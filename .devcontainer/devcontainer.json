@@ -1,7 +1,7 @@
 {
   "name": "diffusion-rl-cuda",
   "build": {
-    "dockerfile": "docker/Dockerfile",
+    "dockerfile": "../docker/Dockerfile",
     "context": ".."
   },
   "settings": {
@@ -14,5 +14,5 @@
       ]
     }
   },
-  "postCreateCommand": "pip install torch tensorboard"
+  "postCreateCommand": "python3 -m pip install --upgrade pip && python3 -m pip install torch tensorboard"
 }
