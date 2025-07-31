@@ -1,13 +1,12 @@
 {
   "name": "diffusion-rl-dev",
   "build": {
-    "dockerfile": "docker/Dockerfile",
+    "dockerfile": "../docker/Dockerfile",  // 👈 路径要加上 "../"
     "context": ".."
   },
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
   },
-  "postCreateCommand": "pip install tensorboard",
   "customizations": {
     "vscode": {
       "extensions": [
